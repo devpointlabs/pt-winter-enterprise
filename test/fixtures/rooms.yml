@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  capacity: 1
+  room_number: MyString
+  price: 1.5
+  availability: false
+  ada: false
+  smoking: false
+  reservation: one
+
+two:
+  capacity: 1
+  room_number: MyString
+  price: 1.5
+  availability: false
+  ada: false
+  smoking: false
+  reservation: two
