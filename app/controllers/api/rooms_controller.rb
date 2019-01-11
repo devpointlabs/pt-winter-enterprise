@@ -10,7 +10,7 @@ class Api::RoomsController < ApplicationController
   end
 
   def create
-    room = Room.create(room_params)
+    room = Room.new(room_params)
     if room.save
       render json: room
     else
@@ -36,6 +36,6 @@ class Api::RoomsController < ApplicationController
     end
 
     def room_params
-      params.require(:room).permit(:capacity, :room_number, :price, :availabilty, :ada, :smoking, :reservation_id, :created_at, :updated_at, :index_rooms_on_reservation_id)
+      params.require(:room).permit(:capacity, :room_number, :price, :availabilty, :ada, :smoking, :reservation_id)
     end
 end
