@@ -1,6 +1,6 @@
 class Api::ReservationsController < ApplicationController
   
-  before_action :find_reservaton, only: [:show, :update, :destory]
+  before_action :find_reservaton, only: [:show, :update, :destroy]
 
   def index
     render json: current_user.reservatons.all
@@ -27,7 +27,7 @@ class Api::ReservationsController < ApplicationController
     end
   end
 
-  def destory
+  def destroy
     @reservation.destroy
   end
 
