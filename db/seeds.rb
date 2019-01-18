@@ -1,4 +1,4 @@
-5.times do
+5.times do |i|
   Room.create(
       capacity: 2,
       room_number: "#{i}",
@@ -11,7 +11,7 @@ end
 
 5.times do |i|
   # create users for reservations
-  user = User.new(email: "#{i}_test@test.com", first_name: "#{i}_first", last_name: "#{i}_last")
+  user = User.new(email: "#{i}_test@test.com")
   # create dummy users for reservations
   user.save!(validate: false)
 
