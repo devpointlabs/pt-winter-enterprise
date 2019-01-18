@@ -1,6 +1,5 @@
 import React from 'react';
 import {Card, Header, Image} from 'semantic-ui-react';
-import {BrowserRouter} from 'react-router-dom';
 
 const About = () => (
     <div>
@@ -20,7 +19,6 @@ const About = () => (
         <Image src=''/>
         <Image src=''/>
     </div>
-
 )
-  
-  export default About;
+
+export default About;
