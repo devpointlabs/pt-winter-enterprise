@@ -3,6 +3,7 @@ import {Route, Switch} from 'react-router-dom'
 import {Container} from 'semantic-ui-react';
 import NoMatch from './components/NoMatch'
 import About from './components/About';
+import Rooms from './components/Rooms';
 // import Blog from '/components/Blog';
 // import Home from '/components/Home';
 
@@ -12,6 +13,7 @@ const App = () => (
       <Switch>
         {/* <Route exact path='/' component={Home} /> */}
         <Route exact path='/about' component={About} />
+        <Route exact path='/rooms' component={Rooms} />
         {/* <Route exact path='/packages' component={Packages} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/privacy' component={Privacy} />

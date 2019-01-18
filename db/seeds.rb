@@ -27,7 +27,7 @@ end
       capacity: 4,
       room_number: "#{i}00",
       price: 165.00,
-      availability: true,
+      availability: false,
       ada: true,
       smoking: false,
       reservation_id: reservation.id
