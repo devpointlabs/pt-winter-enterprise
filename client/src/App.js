@@ -7,8 +7,6 @@ import Rooms from './components/Rooms';
 // import Blog from '/components/Blog';
 // import Home from '/components/Home';
 
-
-
 const App = () => (
   <Fragment>
     <Container>
@@ -32,8 +30,6 @@ const App = () => (
       </Switch>
     </Container>
   </Fragment>
-
-
 )
 
 export default App;

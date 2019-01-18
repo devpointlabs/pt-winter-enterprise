@@ -19,7 +19,6 @@ const About = () => (
         <Image src=''/>
         <Image src=''/>
     </div>
-
 )
-  
-  export default About;
+
+export default About;
