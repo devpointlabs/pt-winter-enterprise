@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Header, Segment, Icon, Card, Grid } from 'semantic-ui-react';
+import { Header, Segment, Icon, Image, Card, Grid } from 'semantic-ui-react';
 import { Link, } from 'react-router-dom';
 import axios from 'axios';
 import CurrencyFormat from 'react-currency-format';
+import NoSmoking from './No_Smoking.svg';
 
 class Rooms extends Component {
 
@@ -30,6 +31,7 @@ class Rooms extends Component {
                   <p>Capacity: {room.capacity}</p>
                   <p>{room.availability ? "Available" : "Unavailable"}</p>
                   <p>{room.ada ? <Icon name="wheelchair"/> : ""}</p>
+                  <p>{room.smoking ? <Icon name="wheelchair"/> : ""}<Image src={NoSmoking} size='mini' /></p>
               </Card.Content>
             </Card>
           </Grid.Column>
