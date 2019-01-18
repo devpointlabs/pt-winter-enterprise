@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Segment, Card, Grid } from 'semantic-ui-react';
+import { Header, Segment, Icon, Card, Grid } from 'semantic-ui-react';
 import { Link, } from 'react-router-dom';
 import axios from 'axios';
 import CurrencyFormat from 'react-currency-format';
@@ -26,9 +26,10 @@ class Rooms extends Component {
                 </Link>
               </Card.Content>
               <Card.Content>
-                  <p>Price: <CurrencyFormat value={room.price} displayType={'text'} thousandSeparator={true} prefix={'$'} /></p>
+                  <p><CurrencyFormat value={room.price} displayType={'text'} thousandSeparator={true} prefix={'$'} decimalScale={2} fixedDecimalScale={true} /></p>
                   <p>Capacity: {room.capacity}</p>
-                  <p>Availability: {room.availability ? "Available" : "Unavailable"}</p>
+                  <p>{room.availability ? "Available" : "Unavailable"}</p>
+                  <p>{room.ada ? <Icon name="wheelchair"/> : ""}</p>
               </Card.Content>
             </Card>
           </Grid.Column>
