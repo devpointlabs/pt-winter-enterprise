@@ -6,6 +6,7 @@ import About from './components/About';
 import Rooms from './components/Rooms';
 // import Blog from '/components/Blog';
 // import Home from '/components/Home';
+import Room from './components/Room';
 
 const App = () => (
   <Fragment>
@@ -14,6 +15,7 @@ const App = () => (
         {/* <Route exact path='/' component={Home} /> */}
         <Route exact path='/about' component={About} />
         <Route exact path='/rooms' component={Rooms} />
+        <Route exact path='/rooms/:id' component={Room} />
         {/* <Route exact path='/packages' component={Packages} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/privacy' component={Privacy} />
