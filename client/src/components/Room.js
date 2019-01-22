@@ -6,7 +6,7 @@ import Rooms from './Rooms'
 import CurrencyFormat from 'react-currency-format';
 
 class Room extends React.Component {
-    state = {room: []}
+    state = {room:{}}
 
     componentDidMount() {
         axios.get(`/api/rooms/${this.props.match.params.id}`)
