@@ -8,10 +8,6 @@ import { Switch, Route, } from "react-router-dom";
 
 
 
- 
-
-
-
 const App = () => (
   <Fragment>
     <Navbar />
@@ -24,12 +20,12 @@ const App = () => (
         />
         <Route
           exact
-          path="/component/packages"
+          path="./component/packages"
           render={ () => < Packages/> }
         />
         <Route
           exact
-          path="/component/contact"
+          path="./component/contact"
           render={ () => <Contact/> }
         />
       </Switch>
