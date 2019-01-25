@@ -1,8 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { Header, Segment, Card, Grid , Container, CardContent} from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
-import Rooms from './Rooms'
+import { Header, Card, CardContent} from 'semantic-ui-react';
 import CurrencyFormat from 'react-currency-format';
 
 class Room extends React.Component {
