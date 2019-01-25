@@ -8,12 +8,12 @@ const AuthRoute = ({ component: Component, ...rest }) => (
       <Route
         {...rest}
         render={props => (
-          !auth.authenticated ?
+          !auth.user.admin ?
             <Component {...props} />
             :
             <Redirect
               to={{
-                pathname: '/accounts',
+                pathname: '/',
                 state: { from: props.location }
               }}
             />
@@ -23,4 +23,4 @@ const AuthRoute = ({ component: Component, ...rest }) => (
   </AuthProvider>
 )
 
-export default AdminReservationView;
+export default AuthRoute;

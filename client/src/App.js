@@ -6,7 +6,9 @@ import About from './components/About';
 import Rooms from './components/Rooms';
 // import Blog from '/components/Blog';
 // import Home from '/components/Home';
+import Reservations from './components/Reservations';
 import Room from './components/Room';
+import AuthRoute from './components/AuthRoute';
 
 const App = () => (
   <Fragment>
@@ -16,7 +18,7 @@ const App = () => (
         <Route exact path='/about' component={About} />
         <Route exact path='/rooms' component={Rooms} />
         <Route exact path='/rooms/:id' component={Room} />
-
+        <AuthRoute exact path='/reservations' component={Reservations} />
         {/* <Route exact path='/packages' component={Packages} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/privacy' component={Privacy} />
