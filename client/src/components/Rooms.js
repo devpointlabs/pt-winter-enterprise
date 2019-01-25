@@ -4,6 +4,7 @@ import { Link, } from 'react-router-dom';
 import axios from 'axios';
 import CurrencyFormat from 'react-currency-format';
 import NoSmoking from './No_Smoking.svg';
+import Smoking from './Smoking.svg';
 
 class Rooms extends Component {
 
@@ -30,8 +31,8 @@ class Rooms extends Component {
                   <p><CurrencyFormat value={room.price} displayType={'text'} thousandSeparator={true} prefix={'$'} decimalScale={2} fixedDecimalScale={true} /></p>
                   <p>Capacity: {room.capacity}</p>
                   <p>{room.availability ? "Available" : "Unavailable"}</p>
-                  <p>{room.ada ? <Icon name="wheelchair"/> : ""}</p>
-                  <p>{room.smoking ? <Icon name="wheelchair"/> : ""}<Image src={NoSmoking} size='mini' /></p>
+                  <p>{room.ada ? <Icon name="wheelchair" size='big' color='blue'/> : ""}</p>
+                  <p>{room.smoking ? <Image src={Smoking} size='mini' /> : <Image src={NoSmoking} size='mini' />}</p>
               </Card.Content>
             </Card>
           </Grid.Column>
