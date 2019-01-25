@@ -23,7 +23,7 @@ class Rooms extends Component {
               <Card.Content>
                 <Link to={`/rooms/${room.id}`}>
                   {/* todo: change header???*/}
-                  <Header as='h3'>Room Number: {room.room_number}</Header>
+                  <Header as='h3' >Room Number: {room.room_number}</Header>
                   {/* ada, availability, capacity, price, smoking */}
                 </Link>
               </Card.Content>

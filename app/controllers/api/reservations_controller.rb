@@ -3,7 +3,7 @@ class Api::ReservationsController < ApplicationController
   before_action :find_reservaton, only: [:show, :update, :destroy]
 
   def index
-    render json: current_user.reservatons.all
+    render json: current_user.reservations.all
   end
 
   def show
