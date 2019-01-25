@@ -7,6 +7,7 @@ import Rooms from './components/Rooms';
 // import Blog from '/components/Blog';
 // import Home from '/components/Home';
 import Room from './components/Room';
+import Reservations from './components/Reservations'
 
 const App = () => (
   <Fragment>
@@ -24,9 +25,9 @@ const App = () => (
         <Route exact path='/jobs' component={Jobs} />
         <Route exact path='/stay' component={Stay} />
         <Route exact path='/users' component={Users} />
-        <Route exact path='/users/:id' component={User} />
-        <Route exact path='/users/:user_id/reservations' component={Reservations} />
-        <Route exact path='/users/:user_id/reservations/:id' component={Reservation} />
+        <Route exact path='/users/:id' component={User} /> */}
+        <Route exact path='/reservations' component={Reservations} />
+        {/* <Route exact path='/users/:user_id/reservations/:id' component={Reservation} />
         <Route exact path='/users/:user_id/reservations/:reservation_id/rooms' component={Rooms} />
         <Route exact path='/users/:user_id/reservations/:reservation_id/rooms/:id' component={Room} /> */}
         <Route component={NoMatch} />
