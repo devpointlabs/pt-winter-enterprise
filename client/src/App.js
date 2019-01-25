@@ -5,7 +5,7 @@ import NoMatch from './components/NoMatch'
 import About from './components/About';
 import Rooms from './components/Rooms';
 // import Blog from '/components/Blog';
-// import Home from '/components/Home';
+import Home from './components/Home';
 import Room from './components/Room';
 // import AuthRoute from './components/AuthRoute';
 import Reservations from './components/Reservations'
@@ -15,7 +15,7 @@ const App = () => (
   <Fragment>
     <Container>
       <Switch>
-        {/* <Route exact path='/' component={Home} /> */}
+        <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
         <Route exact path='/rooms' component={Rooms} />
         <Route exact path='/rooms/:id' component={Room} />
