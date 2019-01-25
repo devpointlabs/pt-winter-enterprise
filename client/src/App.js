@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import {Route, Switch} from 'react-router-dom'
-import {Container} from 'semantic-ui-react';
+import { Route, Switch } from 'react-router-dom'
+import { Container } from 'semantic-ui-react';
 import NoMatch from './components/NoMatch'
 import About from './components/About';
 import Rooms from './components/Rooms';
@@ -8,6 +8,7 @@ import Rooms from './components/Rooms';
 // import Home from '/components/Home';
 import Room from './components/Room';
 import Reservations from './components/Reservations'
+import ReservationForm from './components/ReservationForm';
 
 const App = () => (
   <Fragment>
@@ -27,9 +28,10 @@ const App = () => (
         <Route exact path='/users' component={Users} />
         <Route exact path='/users/:id' component={User} /> */}
         <Route exact path='/reservations' component={Reservations} />
-        {/* <Route exact path='/users/:user_id/reservations/:id' component={Reservation} />
+        {/* <Route exact path='/users/:user_id/reservations/:id' component={Reservation} /> */}
+        <Route exact path='/reservationform' component={ReservationForm} />
         <Route exact path='/users/:user_id/reservations/:reservation_id/rooms' component={Rooms} />
-        <Route exact path='/users/:user_id/reservations/:reservation_id/rooms/:id' component={Room} /> */}
+        <Route exact path='/users/:user_id/reservations/:reservation_id/rooms/:id' component={Room} />
         <Route component={NoMatch} />
       </Switch>
     </Container>

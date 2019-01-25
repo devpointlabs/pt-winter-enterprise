@@ -1,28 +1,37 @@
 import React from 'react';
 import { Form } from 'semantic-ui-react';
 import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
 
 
-class ReservationForm extends Components {
-  State = {
+
+class ReservationForm extends React.Component {
+  state = {
     start_date: '',
     end_date:'',
     adults: '',
     child: '',
     user_id: '',
 
-  }
+}
 
-  state = { ...this.initialState }
 
   componentDidMount() {
     if (this.props.id)
       this.setState({ ...this.props })
   }
 
+  handleStartDate = (e) => {
+    this.setState({ start_date: e })
+  }
+
+  handleEndDate = (e) => {
+    this.setState({ end_date: e })
+  }
+
   handleChange = (e) => {
-    const { name, value } = e.target
-    this.setState({ [name]: value })
+    const{name, value} = e.target
+    this.setState({[name]: value})
   }
 
   handleSubmit = (e) => {
@@ -40,7 +49,7 @@ class ReservationForm extends Components {
           selectsStart
           startDate={start_date}
           endDate={end_date}
-          onChange={handleChangeStart}
+          onChange={this.handleStartDate}
         />
 
         <DatePicker
@@ -48,7 +57,7 @@ class ReservationForm extends Components {
           selectsEnd
           startDate={start_date}
           endDate={end_date}
-          onChange={handleChangeEnd}
+          onChange={this.handleEndDate}
         />
 
         <Form.Input
