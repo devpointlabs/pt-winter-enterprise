@@ -7,10 +7,6 @@ import CurrencyFormat from 'react-currency-format';
 import styled, { keyframes } from 'styled-components';
 
 
-
-                   
-
-// <iframe
 class Room extends React.Component {
     state = {room:{}}
 
@@ -85,4 +81,3 @@ class Room extends React.Component {
 
 
 export default Room;
-
