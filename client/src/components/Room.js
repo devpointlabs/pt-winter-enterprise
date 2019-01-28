@@ -1,8 +1,12 @@
 import React,{ Fragment }  from 'react';
 import axios from 'axios';
+<<<<<<< HEAD
 import { Header, Segment, Card, Grid , Container, Image, CardContent, GridColumn } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Rooms from './Rooms'
+=======
+import { Header, Card, CardContent} from 'semantic-ui-react';
+>>>>>>> 4443f38842bb6322b4aa0260298ee5421177d50b
 import CurrencyFormat from 'react-currency-format';
 import styled, { keyframes } from 'styled-components';
 
