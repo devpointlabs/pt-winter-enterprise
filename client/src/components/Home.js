@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import HeroImage from '../images/hero.jpeg';
 
-class Welcome extends React.Component {
+class Home extends React.Component {
 
   render() {
     return (
@@ -21,8 +21,8 @@ class Welcome extends React.Component {
         <div style={{ margin: '75px 0px', display: 'flex', justifyContent: 'center' }}>
           <Mission>
             Lorem ipsum dolor sit amet, eum ut putent assentior. Cu diceret honestatis nec. His esse nostrud vivendum no, mei ornatus scribentur liberavisse et. Everti detraxit te qui, usu ei omnis abhorreant disputationi, ubique quidam an est. No oratio verear cum, ius eu falli explicari.
-  Minim debet ubique ea duo, in eum impetus vulputate. Iudico sapientem constituto no quo, tempor gubergren nam ne, minimum repudiare necessitatibus in vel. Has liber vitae dissentias at, omnium impedit iracundia cu duo. Ius ne eruditi noluisse tincidunt.
-  Ut alii molestie qui, alii ferri nobis no has. Sonet constituto no has, ne quo malorum adipiscing. Te eligendi accusata eleifend vim, te mel dolorum erroribus elaboraret, eu mel meis dicit quodsi. Luptatum vivendum in qui, augue integre corrumpit quo at. Mei et paulo vivendo consequuntur, alterum blandit volutpat eum et.
+            Minim debet ubique ea duo, in eum impetus vulputate. Iudico sapientem constituto no quo, tempor gubergren nam ne, minimum repudiare necessitatibus in vel. Has liber vitae dissentias at, omnium impedit iracundia cu duo. Ius ne eruditi noluisse tincidunt.
+            Ut alii molestie qui, alii ferri nobis no has. Sonet constituto no has, ne quo malorum adipiscing. Te eligendi accusata eleifend vim, te mel dolorum erroribus elaboraret, eu mel meis dicit quodsi. Luptatum vivendum in qui, augue integre corrumpit quo at. Mei et paulo vivendo consequuntur, alterum blandit volutpat eum et.
           </Mission>
         </div>
         <CustomHR />
@@ -88,4 +88,4 @@ const CustomHR = styled.hr`
   border-top: 1px solid #ccc;
 `
 
-export default Welcome;
+export default Home;
