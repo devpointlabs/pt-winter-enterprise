@@ -1,6 +1,6 @@
 import React,{ Fragment }  from 'react';
 import axios from 'axios';
-import { Header, Card, CardContent} from 'semantic-ui-react';
+import { Header, Image, Card, Container, CardContent, Grid, Icon} from 'semantic-ui-react';
 import CurrencyFormat from 'react-currency-format';
 import styled, { keyframes } from 'styled-components';
 
@@ -17,42 +17,20 @@ class Room extends React.Component {
       render() {
           const {room_number,price, capacity,availability} = this.state.room
         return (
+
             <Fragment>
 
                 <Grid>
-                    <Grid.Row columns={2}>
-                        <Grid.Column width={8}>
-                            <Image src= "https://images.unsplash.com/photo-1507038772120-7fff76f79d79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"  />
-                            <Card class>
-                             <Header as="h2">Room Number {room_number}</Header>
-                             <Card.Content>
-                            <p>Price: <CurrencyFormat value={price} displayType={'text'} thousandSeparator={true} prefix={'$'} /></p>
-                            <p>Capacity: {capacity}</p>
-                            <p>Availability: {availability ? "Available" : "Unavailable"}</p>
-                            </Card.Content>
-                            </Card>
+                    <Grid.Row columns={2} relaxed='very'>
+                        <Grid.Column stretched >
+                            <Header as="h1" textAlign='center'> Queen Suite | Room # {room_number} </Header>
+                            <Image src= "https://images.unsplash.com/photo-1507038772120-7fff76f79d79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" size='big' centered />
                         </Grid.Column>
                             
 
                         <Grid.Column>
-                        <Card class>
-                         <Card.Content>
-                            <Header as="h2">Room Facilities </Header>
-                         </Card.Content>
-                        <Card.Content>
-                            <p> Tea and Coffee Makeer </p>
-                            <p> Tv </p>
-                            <p> Hairdryer </p>
-                            <p> Mini-fridge </p>
-                            <p> Wifi </p>
-                        </Card.Content>
-                        </Card>
-
-                        <Card class>
-                            <Card.Content>
+                            <Container fluid>
                         <Header as="h2">Room Details </Header>
-                             </Card.Content>
-                         <Card.Content>
                             <p> Our Spacious Non-Smoking Queen Suites feature 512 sq. ft. of 
                                 warm inviting décor designed to make your business or leisure 
                                 trip as comfortable and relaxing as possible. This suite is 
@@ -62,9 +40,43 @@ class Room extends React.Component {
                                 business desk and comfortable office chair that are great for 
                                 getting work or reading done. SNQ 
                                 Additional Amenities: Complimentary Wi-Fi </p>
-                            
-                        </Card.Content>
-                        </Card>
+                        </Container>
+                        <Grid divided='vertically'>
+                            <Grid.Row columns={3}>
+                                <Grid.Column>
+                                    <Card>
+                                        <Card.Content>
+                                            <p> <Icon name='money' /> Price: <CurrencyFormat value={price} displayType={'text'} thousandSeparator={true} prefix={'$'} /></p>
+                                        </Card.Content>
+                                    </Card>
+                                </Grid.Column>
+
+                                <Grid.Column>
+                                    <Card>
+                                        <Card.Content>
+                                            <p> <Icon name='hotel' /> Capacity: {capacity}</p>
+                                        </Card.Content>
+                                    </Card>
+                                </Grid.Column>
+
+                                <Grid.Column>
+                                    <Card>
+                                        <Card.Content>
+                                            <p> <Icon name='jenkins' /> Availability: {availability ? "Available" : "Unavailable"}</p>
+                                        </Card.Content>
+                                    </Card>
+                                </Grid.Column>
+                            </Grid.Row>
+                        </Grid>
+
+                        
+                            <Header as="h2">Room Facilities </Header>
+                        
+                            <p> Tea and Coffee Maker <Icon name='coffee' /> </p> 
+                            <p> Tv <Icon name='tv' /> </p> 
+                            <p> Wifi <Icon name='wifi' /> </p>
+                            <p> Phone <Icon name='phone' /> </p> 
+                      
 
                         </Grid.Column>
                     </Grid.Row>
