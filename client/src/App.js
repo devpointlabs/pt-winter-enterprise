@@ -4,21 +4,12 @@ import NoMatch from './components/NoMatch'
 import About from './components/About';
 import Rooms from './components/Rooms';
 // import Blog from '/components/Blog';
-<<<<<<< HEAD
 // import Home from '/components/Home';
-import Reservations from './components/Reservations';
-import ReservationForm from './components/ReservationForm';
 import Room from './components/Room';
-import AuthRoute from './components/AuthRoute';
-// import Reservations from './components/Reservations'
-// import ReservationForm from './components/ReservationForm';
-=======
 import Home from './components/Home';
-import Room from './components/Room';
 // import AuthRoute from './components/AuthRoute';
 import Reservations from './components/Reservations'
 import ReservationForm from './components/ReservationForm';
->>>>>>> 4443f38842bb6322b4aa0260298ee5421177d50b
 
 const App = () => (
   <Fragment>
