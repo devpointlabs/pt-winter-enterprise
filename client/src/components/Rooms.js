@@ -47,8 +47,7 @@ class Rooms extends Component {
       )
     })
   };
-  // style={ roomsStyle }
-// <div style={{margin: '15px'}}>
+
   render() {
     return (
         <div style={{margin: '15px'}}>
