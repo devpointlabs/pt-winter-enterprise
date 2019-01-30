@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import NoMatch from './components/NoMatch'
 import About from './components/About';
 import Rooms from './components/Rooms';
+import Navbar from './components/Navbar';
 // import Blog from '/components/Blog';
 // import Home from '/components/Home';
 import Room from './components/Room';
@@ -13,6 +14,7 @@ import ReservationForm from './components/ReservationForm';
 
 const App = () => (
   <Fragment>
+    <Navbar />
     <Switch>
       <Route exact path='/' component={Home} />
       <Route exact path='/about' component={About} />
@@ -32,8 +34,8 @@ const App = () => (
       <Route exact path='/users/:user_id/reservations/:reservation_id/rooms' component={Rooms} />
       <Route exact path='/users/:user_id/reservations/:reservation_id/rooms/:id' component={Room} />
       <Route component={NoMatch} />
-    </Switch>
-  </Fragment>
+  </Switch>
+</Fragment>
 )
 
 export default App;

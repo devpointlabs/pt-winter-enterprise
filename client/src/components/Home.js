@@ -43,7 +43,7 @@ const Hero = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  // position: relative;
 `
 
 const HeroText = styled.div`
