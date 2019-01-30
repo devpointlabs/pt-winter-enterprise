@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Header, Segment, Card, Grid } from 'semantic-ui-react';
 import axios from 'axios';
+import { Link, } from 'react-router-dom';
+
 
 class Reservations extends Component {
   state = { reservations: [] };
@@ -16,6 +18,11 @@ class Reservations extends Component {
           <Grid.Column key={reservation.id}>
             <Card>
               <Card.Content>
+              <Link to={`/reservations/${reservation.id}`}>
+                  {/* todo: change header???*/}
+                  <Header as='h3' >Reservation ID: {reservation.user_id}</Header>
+                  {/* ada, availability, capacity, price, smoking */}
+              </Link>
                   <p>Start Date: {reservation.start_date} </p>
                   <p>End Date: {reservation.end_date} </p>
                   <p>Adults: {reservation.adults} </p>

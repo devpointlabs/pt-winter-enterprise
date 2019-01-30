@@ -10,11 +10,12 @@ import Home from './components/Home';
 // import AuthRoute from './components/AuthRoute';
 import Reservations from './components/Reservations'
 import ReservationForm from './components/ReservationForm';
+import Reservation from './components/Reservation';
 
 const App = () => (
   <Fragment>
     <Switch>
-      {/* <Route exact path='/' component={Home} /> */}
+      <Route exact path='/' component={Home} /> 
       <Route exact path='/about' component={About} />
       <Route exact path='/rooms' component={Rooms} />
       <Route exact path='/rooms/:id' component={Room} />
@@ -27,6 +28,7 @@ const App = () => (
         <Route exact path='/users' component={Users} />
         <Route exact path='/users/:id' component={User} /> */}
       <Route exact path='/reservations' component={Reservations} />
+      <Route exact path='/reservations/:id' component={Reservation} />
       {/* <Route exact path='/users/:user_id/reservations/:id' component={Reservation} /> */}
       <Route exact path='/reservationform' component={ReservationForm} />
       <Route exact path='/users/:user_id/reservations/:reservation_id/rooms' component={Rooms} />
