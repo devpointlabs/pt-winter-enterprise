@@ -30,7 +30,12 @@ color: #FFFFFF;
 const Footer = () => (
 
   <NavContainer>
-     <NavLink to='/reservations'>
+      <NavLink to='/'>
+        <MenuItem>
+           Return Home
+        </MenuItem>
+     </NavLink>
+     <NavLink to='/reservationform'>
         <MenuItem>
            Stay 
         </MenuItem>
@@ -40,9 +45,6 @@ const Footer = () => (
           Contact Us
         </MenuItem>
       </NavLink>
-      <LogoContainer>
-      Enterprise International
-      </LogoContainer>
    </NavContainer>
 );
 

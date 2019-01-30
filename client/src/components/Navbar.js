@@ -31,10 +31,10 @@ const Navbar = () => (
 const NavContainer = styled.div`
 background-color: black;
 height: 8px;
-padding: 25px;
+padding: 30px;
 text-align: right;
 display: block;
-position: fixed;
+position: absoulte;
 top: 0;
 width: 100%;
 `
