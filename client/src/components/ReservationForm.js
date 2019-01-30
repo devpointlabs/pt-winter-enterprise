@@ -47,6 +47,7 @@ class ReservationForm extends React.Component {
       <Header>Reservation Form</Header>
       <Form>
         
+        <p>Start Date</p>
         <DatePicker
           selected={start_date}
           selectsStart
@@ -55,7 +56,7 @@ class ReservationForm extends React.Component {
           onChange={this.handleStartDate}
           label='Dates'
         />
-
+        <p>End Date</p>
         <DatePicker
           selected={end_date}
           selectsEnd

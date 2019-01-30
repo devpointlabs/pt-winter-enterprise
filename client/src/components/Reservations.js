@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { Header, Segment, Card, Grid } from 'semantic-ui-react';
+import { Header, Image, Icon, Segment, Card, Grid } from 'semantic-ui-react';
 import axios from 'axios';
 import { Link, } from 'react-router-dom';
+
+
 
 
 class Reservations extends Component {
@@ -15,6 +17,7 @@ class Reservations extends Component {
   renderReservations = () => {
     return this.state.reservations.map(reservation => {
       return (
+        <Grid padded>
           <Grid.Column key={reservation.id}>
             <Card>
               <Card.Content>
@@ -23,14 +26,15 @@ class Reservations extends Component {
                   <Header as='h3' >Reservation ID: {reservation.user_id}</Header>
                   {/* ada, availability, capacity, price, smoking */}
               </Link>
-                  <p>Start Date: {reservation.start_date} </p>
-                  <p>End Date: {reservation.end_date} </p>
-                  <p>Adults: {reservation.adults} </p>
-                  <p>Child: {reservation.child} </p>
-                  <p>User Id: {reservation.user_id} </p>
+                  <p> <Icon name='calendar' /> Start Date: {reservation.start_date} </p>
+                  <p> <Icon name='calendar alternate' /> End Date: {reservation.end_date} </p>
+                  <p>  <Icon name='plus' /> Adults: {reservation.adults} </p>
+                  <p> <Icon name='child' /> Child: {reservation.child} </p>
+                  <p> <Icon name='hotel' /> User Id: {reservation.user_id} </p>
               </Card.Content>
             </Card>
           </Grid.Column>
+          </Grid>
       )
     })
   };
