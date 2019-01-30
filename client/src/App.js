@@ -10,11 +10,12 @@ import Home from './components/Home';
 // import AuthRoute from './components/AuthRoute';
 import Reservations from './components/Reservations'
 import ReservationForm from './components/ReservationForm';
+import Footer from './components/Footer';
 
 const App = () => (
   <Fragment>
     <Switch>
-      {/* <Route exact path='/' component={Home} /> */}
+      <Route exact path='/' component={Home} />
       <Route exact path='/about' component={About} />
       <Route exact path='/rooms' component={Rooms} />
       <Route exact path='/rooms/:id' component={Room} />
@@ -33,7 +34,10 @@ const App = () => (
       <Route exact path='/users/:user_id/reservations/:reservation_id/rooms/:id' component={Room} />
       <Route component={NoMatch} />
     </Switch>
+    <Footer />
   </Fragment>
+  
+ 
 )
 
 export default App;

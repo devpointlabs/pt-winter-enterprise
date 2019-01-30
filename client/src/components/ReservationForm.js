@@ -1,5 +1,5 @@
-import React from 'react';
-import { Form } from 'semantic-ui-react';
+import React,{Fragment} from 'react';
+import { Form, Header } from 'semantic-ui-react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -43,13 +43,17 @@ class ReservationForm extends React.Component {
   render() {
     const { start_date, end_date, adults, child, user_id } = this.state
     return (
+      <Fragment>
+      <Header>Reservation Form</Header>
       <Form>
+        
         <DatePicker
           selected={start_date}
           selectsStart
           startDate={start_date}
           endDate={end_date}
           onChange={this.handleStartDate}
+          label='Dates'
         />
 
         <DatePicker
@@ -58,6 +62,7 @@ class ReservationForm extends React.Component {
           startDate={start_date}
           endDate={end_date}
           onChange={this.handleEndDate}
+          label='Dates'
         />
 
         <Form.Input
@@ -86,7 +91,7 @@ class ReservationForm extends React.Component {
 
         <Form.Button>Save</Form.Button>
       </Form >
-
+      </Fragment>
     )
   }
 }
