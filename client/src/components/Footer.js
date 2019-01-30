@@ -20,22 +20,29 @@ display: block;
 margin-right: 50px;
 color: #FFFFFF;
 `
+const LogoContainer = styled.div`
+float: left;
+color: #FFFFFF;
+
+`
 
 
 const Footer = () => (
 
- <NavContainer>
-    {/* <img src={logo} className="App-logo" alt="logo" /> */}
-     <NavLink to='/contact'>
-       <MenuItem>
-         Contact Us
-       </MenuItem>
+  <NavContainer>
+     <NavLink to='/reservations'>
+        <MenuItem>
+           Stay 
+        </MenuItem>
      </NavLink>
-     <NavLink to='/rooms'>
-       <MenuItem>
-         Stay
-       </MenuItem>
-     </NavLink>
+      <NavLink to='/contact'>
+        <MenuItem>
+          Contact Us
+        </MenuItem>
+      </NavLink>
+      <LogoContainer>
+      Enterprise International
+      </LogoContainer>
    </NavContainer>
 );
 

@@ -14,15 +14,13 @@ class Home extends React.Component {
         </Hero>
         <div style={{ margin: '75px 0px', display: 'flex', justifyContent: 'center' }}>
           <TagH1>
-            Ad qui convenire liberavisse, vide referrentur ei sea.
+            Enterprise International Travel Group
           </TagH1>
         </div>
         <CustomHR />
         <div style={{ margin: '75px 0px', display: 'flex', justifyContent: 'center' }}>
           <Mission>
-            Lorem ipsum dolor sit amet, eum ut putent assentior. Cu diceret honestatis nec. His esse nostrud vivendum no, mei ornatus scribentur liberavisse et. Everti detraxit te qui, usu ei omnis abhorreant disputationi, ubique quidam an est. No oratio verear cum, ius eu falli explicari.
-            Minim debet ubique ea duo, in eum impetus vulputate. Iudico sapientem constituto no quo, tempor gubergren nam ne, minimum repudiare necessitatibus in vel. Has liber vitae dissentias at, omnium impedit iracundia cu duo. Ius ne eruditi noluisse tincidunt.
-            Ut alii molestie qui, alii ferri nobis no has. Sonet constituto no has, ne quo malorum adipiscing. Te eligendi accusata eleifend vim, te mel dolorum erroribus elaboraret, eu mel meis dicit quodsi. Luptatum vivendum in qui, augue integre corrumpit quo at. Mei et paulo vivendo consequuntur, alterum blandit volutpat eum et.
+            A travel agency is a private retailer or public service that provides travel and tourism related services to the public on behalf of suppliers such as activities, airlines, car rentals, cruise lines, hotels, railways, travel insurance, and package tours. In addition to dealing with ordinary tourists, most travel agencies have a separate department devoted to making travel arrangements for business travelers; some travel agencies specialize in commercial and business travel only. There are also travel agencies that serve as general sales agents for foreign travel companies, allowing them to have offices in countries other than where their headquarters are located.
           </Mission>
         </div>
         <CustomHR />

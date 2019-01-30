@@ -13,6 +13,7 @@ import Reservations from './components/Reservations'
 import ReservationForm from './components/ReservationForm';
 import Reservation from './components/Reservation';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 const App = () => (
   <Fragment>
@@ -22,8 +23,9 @@ const App = () => (
       <Route exact path='/about' component={About} />
       <Route exact path='/rooms' component={Rooms} />
       <Route exact path='/rooms/:id' component={Room} />
+      <Route exact path='/contact' component={Contact} />
+
       {/* <Route exact path='/packages' component={Packages} />
-        <Route exact path='/contact' component={Contact} />
         <Route exact path='/privacy' component={Privacy} />
         <Route exact path='/blog' component={Blog} />
         <Route exact path='/jobs' component={Jobs} />
@@ -40,7 +42,7 @@ const App = () => (
     </Switch>
     <Footer />
   </Fragment>
-  
+
 
 )
 

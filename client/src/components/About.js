@@ -9,7 +9,7 @@ class About extends React.Component {
             <div>
                 <Bob>
                     <BobText>
-                        <BobH1>Enterprise International</BobH1>
+                        <BobH1>About Enterprise International</BobH1>
                     </BobText>
                 </Bob>
                 <div style={{ margin: '75px 0px', display: 'flex', justifyContent: 'center' }}>
