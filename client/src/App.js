@@ -11,6 +11,7 @@ import Home from './components/Home';
 // import AuthRoute from './components/AuthRoute';
 import Reservations from './components/Reservations'
 import ReservationForm from './components/ReservationForm';
+import Footer from './components/Footer';
 
 const App = () => (
   <Fragment>
@@ -34,8 +35,16 @@ const App = () => (
       <Route exact path='/users/:user_id/reservations/:reservation_id/rooms' component={Rooms} />
       <Route exact path='/users/:user_id/reservations/:reservation_id/rooms/:id' component={Room} />
       <Route component={NoMatch} />
+<<<<<<< HEAD
   </Switch>
 </Fragment>
+=======
+    </Switch>
+    <Footer />
+  </Fragment>
+  
+ 
+>>>>>>> 3a4d418856a038a7a5e9a4d9589199aab0dd6de4
 )
 
 export default App;
