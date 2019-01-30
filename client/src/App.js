@@ -14,7 +14,7 @@ import ReservationForm from './components/ReservationForm';
 const App = () => (
   <Fragment>
     <Switch>
-      <Route exact path='/' component={Home} />
+      {/* <Route exact path='/' component={Home} /> */}
       <Route exact path='/about' component={About} />
       <Route exact path='/rooms' component={Rooms} />
       <Route exact path='/rooms/:id' component={Room} />
