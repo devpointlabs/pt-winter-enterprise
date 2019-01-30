@@ -1,9 +1,7 @@
-import React,{ Fragment }  from 'react';
+import React, {Fragment}  from 'react';
 import axios from 'axios';
 import { Header, Image, Card, Container, CardContent, Grid, Icon} from 'semantic-ui-react';
 import CurrencyFormat from 'react-currency-format';
-import styled, { keyframes } from 'styled-components';
-
 
 class Room extends React.Component {
     state = {room:{}}

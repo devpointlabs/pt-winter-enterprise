@@ -5,11 +5,11 @@ import About from './components/About';
 import Rooms from './components/Rooms';
 // import Blog from '/components/Blog';
 // import Home from '/components/Home';
-import Reservations from './components/Reservations';
-import ReservationForm from './components/ReservationForm';
 import Room from './components/Room';
-import AuthRoute from './components/AuthRoute';
-
+import Home from './components/Home';
+// import AuthRoute from './components/AuthRoute';
+import Reservations from './components/Reservations'
+import ReservationForm from './components/ReservationForm';
 
 const App = () => (
   <Fragment>
