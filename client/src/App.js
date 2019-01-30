@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import NoMatch from './components/NoMatch'
 import About from './components/About';
 import Rooms from './components/Rooms';
+import Navbar from './components/Navbar';
 // import Blog from '/components/Blog';
 // import Home from '/components/Home';
 import Room from './components/Room';
@@ -14,6 +15,7 @@ import Footer from './components/Footer';
 
 const App = () => (
   <Fragment>
+    <Navbar />
     <Switch>
       <Route exact path='/' component={Home} />
       <Route exact path='/about' component={About} />
@@ -37,7 +39,7 @@ const App = () => (
     <Footer />
   </Fragment>
   
- 
+
 )
 
 export default App;
